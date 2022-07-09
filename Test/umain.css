@@ -13,7 +13,7 @@ p{
 .divisor1{
     margin: 0px;
     padding:10px;
-    width: 45%;
+    width: 50%;
     height: 100vh;
     background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
 
@@ -21,7 +21,7 @@ p{
 .divisor2{
     margin: 0px;
     padding:10px;
-    width: 55%;
+    width: 50%;
     height: 100vh;
     background-color: white;
 }
