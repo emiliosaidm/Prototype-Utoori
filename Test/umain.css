@@ -5,7 +5,7 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: row;
-    margin-bottom: -500px;
+    margin-bottom: 0px;
 }
 p{
     color: white;
@@ -13,7 +13,7 @@ p{
 .divisor1{
     margin: 0px;
     padding:10px;
-    width: 50%;
+    width: 45%;
     height: 100vh;
     background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
 
@@ -21,13 +21,14 @@ p{
 .divisor2{
     margin: 0px;
     padding:10px;
-    width: 50%;
+    width: 55%;
     height: 100vh;
     background-color: white;
 }
 img{
     margin-left:8%;
     height: 12vh;
+    width: 24vh;
 }
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -35,11 +36,15 @@ h1{
     font-size: calc(1.5rem + 2vw);
     font-weight: 600;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 .etitulo{
     width: 100%;
     height: 20%;
     
 }
-
+li{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(.8rem + 1vm);
+}
