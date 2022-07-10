@@ -51,8 +51,8 @@ li{
 }
 .contacto{
     width: auto;
-    margin-left: 30%;
-    margin-top: 20%;
+    margin-left: 25%;
+    margin-top: 25%;
     height: auto;
 
 }
@@ -109,7 +109,7 @@ input[type=text]{
 }
 #email{
     height: 30px;
-    width: 404px;
+    width: 406px;
     border: none;
     border-bottom: 5px solid #ff914d;
     transition: 1s;
