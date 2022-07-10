@@ -141,7 +141,7 @@ select[multiple] {
 select[multiple]:focus option:checked {
     background: #8332e4 linear-gradient(0deg, #8332e4 0%,#8332e4 100%);
     outline: none;
-    color: black;
+    color: white;
     border-bottom: 5px solid #8332e4;
     transition: 1s;
   }
