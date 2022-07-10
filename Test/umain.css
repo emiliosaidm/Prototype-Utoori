@@ -50,11 +50,10 @@ li{
     font-size: calc(.8rem + 1vm);
 }
 .contacto{
-    width: 50%;
+    width: auto;
     margin-left: 30%;
     margin-top: 20%;
     height: auto;
-    background-color: red;
 
 }
 input[type=text]{
@@ -72,3 +71,56 @@ input[type=text]{
     font-family: 'Montserrat', sans-serif;
     font-size: xx-large;
 }
+#Nombre{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom:5px solid #ff914d ;
+    transition: 1s;
+    font-size: 20px;
+}
+#Nombre:focus{
+    border-bottom:5px solid #8332e4 ;
+    outline: none;
+}
+#Nombre:hover{
+    border-bottom:5px solid #8332e4 ;
+    outline: none;
+}
+#Apellido{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom: 5px solid #ff914d;
+    transition: 1s;
+    font-size: 20px;
+    
+}
+#Apellido:focus{
+    border-bottom: 5px solid #8332e4;
+    outline: none;  
+}
+#Apellido:hover{
+    border-bottom: 5px solid #8332e4;
+    outline: none;
+    
+}
+#email{
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 5px solid #ff914d;
+    transition: 1s;
+    font-size: 20px;
+    
+}
+#email:focus{
+    border-bottom: 5px solid #8332e4;
+    outline: none;
+}
+#email:hover{
+    border-bottom: 5px solid #8332e4;
+    outline: none;
+    
+}
+
