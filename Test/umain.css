@@ -6,6 +6,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 0px;
+    overflow-y:hidden;
 }
 p{
     color: white;
@@ -71,6 +72,10 @@ input[type=text]{
     font-family: 'Montserrat', sans-serif;
     font-size: xx-large;
 }
+#L3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+}
 #Nombre{
     height: 30px;
     width: 200px;
@@ -126,5 +131,10 @@ input[type=text]{
     border-bottom: 5px solid #8332e4;
     outline: none;
     
+}
+#select{
+    width: 406px;
+    border: none;
+    overflow-y:hidden;
 }
 
