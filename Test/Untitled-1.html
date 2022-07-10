@@ -2,18 +2,22 @@
 <header>
     <title>Prueba Utoori</title>
     <link rel= "stylesheet" href="umain.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </header>
 <body>
     <div class="divisor1">
     <div class="logo">
         <img src="logoutoori.png">
     </div>
-   <div class="etitulo"><h1>Empecemos...</h1>
+   <div class="etitulo"><h1 class="animate__animated animate__bounceInUp">Empecemos...</h1>
 
 </div> 
 </div>
 <div class="divisor2">
-    <div class="contacto">
+    <div class="animate__animated animate__bounceInDown" id="contacto">
    
     <form>
        <label id="L1">¿Cómo te llamas?</label><br><br>
@@ -21,10 +25,11 @@
     <input type="text" placeholder="Apellido..." id="Apellido"><br><br><br>
     <label id="L2">¿Cuál es tu correo?</label><br><br>
     <input type="email" id="email" placeholder="@" ><br><br><br>
-    <label id="L3">Soy...</label><br><br>
-    <div class="oprofesor">Profesor</div>
-    <div class="oinstitucion">Institución</div>
-
+    <label id="L3">Soy...</label><br>
+    <select multiple name="profesor/institucion" id="select">
+    <option class="soy">Profesor</option>
+    <option class="soy">Institución</option>
+    </select>
     </form>
 
 </div>
