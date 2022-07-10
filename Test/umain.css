@@ -162,4 +162,17 @@ select[multiple]:focus option:checked {
     border-bottom: 5px solid #8332e4;
     transition: 1s;
     }
-    
+
+    #b1{
+        width: auto;
+        border:none;
+        background-color: white;
+        border-bottom: 5px solid #ff914d;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        transition: 1s;
+    }
+    #b1:hover{
+        background-color: white;
+        border-bottom: 5px solid #8332e4;
+    }
