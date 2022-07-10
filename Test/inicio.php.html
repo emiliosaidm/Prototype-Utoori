@@ -19,19 +19,20 @@
 <div class="divisor2">
     <div class="animate__animated animate__bounceInDown" id="contacto">
    
-    <form>
+    <form action="elige.php.html">
        <label id="L1">¿Cómo te llamas?</label><br><br>
-    <input type="text" placeholder="Nombre..." id="Nombre">
-    <input type="text" placeholder="Apellido..." id="Apellido"><br><br><br>
+    <input type="text" placeholder="Nombre..." id="Nombre" required="true">
+    <input type="text" placeholder="Apellido..." id="Apellido"required="true"><br><br><br>
     <label id="L2">¿Cuál es tu correo?</label><br><br>
-    <input type="email" id="email" placeholder="@" ><br><br><br>
+    <input type="email" id="email" placeholder="@" required="true"><br><br><br>
     <label id="L3">Soy...</label><br>
-    <select multiple name="profesor/institucion" id="select">
+    <select multiple name="profesor/institucion" id="select"required="true">
     <option class="soy">Profesor</option>
     <option class="soy">Institución</option>
     </select>
     <button id="b1">Siguiente →</button>
-    </form>
+    
+</form>
 </div>
 </div>
 </body>
