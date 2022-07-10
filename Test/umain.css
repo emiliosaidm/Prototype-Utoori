@@ -78,6 +78,7 @@ input[type=text]{
     border-bottom:5px solid #ff914d ;
     transition: 1s;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 #Nombre:focus{
     border-bottom:5px solid #8332e4 ;
@@ -94,6 +95,7 @@ input[type=text]{
     border-bottom: 5px solid #ff914d;
     transition: 1s;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     
 }
 #Apellido:focus{
@@ -107,16 +109,18 @@ input[type=text]{
 }
 #email{
     height: 30px;
-    width: 400px;
+    width: 404px;
     border: none;
     border-bottom: 5px solid #ff914d;
     transition: 1s;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     
 }
 #email:focus{
     border-bottom: 5px solid #8332e4;
     outline: none;
+    
 }
 #email:hover{
     border-bottom: 5px solid #8332e4;
