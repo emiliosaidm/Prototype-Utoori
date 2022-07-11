@@ -7,9 +7,6 @@ body{
     margin-bottom: 0px;
     overflow-y:hidden;
 }
-p{
-    color: white;
-}
 .divisor1{
     margin: 0px;
     padding:10px;
@@ -178,3 +175,9 @@ select[multiple]:focus option:checked {
         background-color: white;
         border-bottom: 5px solid #ff914d;
     }
+p{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+    color: white;  
+}
