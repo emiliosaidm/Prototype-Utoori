@@ -7,6 +7,12 @@ body{
     margin-bottom: 0px;
     overflow-y:hidden;
 }
+p{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+    color: white;  
+}
 #b1{
     width: max-content;
     border:none;
@@ -25,6 +31,9 @@ body{
 
 p{
     color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    
 }
 .divisor1{
     margin: 0px;
@@ -52,14 +61,16 @@ h1{
     font-size: calc(1.5rem + 2vw);
     font-weight: 600;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20%;
     padding: 30px;
 }
 h2{
     text-align: center;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    padding: 15px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-weight: 500;
  
 }
