@@ -36,7 +36,7 @@ h1{
     font-size: calc(1.5rem + 2vw);
     font-weight: 600;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 .etitulo{
     width: 100%;
@@ -164,13 +164,15 @@ select[multiple]:focus option:checked {
     }
 
     #b1{
-        width: auto;
+        width: max-content;
         border:none;
         background-color: white;
         border-bottom: 5px solid #8332e4;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         transition: 1s;
+        margin-top: 5%;
+        margin-left: 60%;
     }
     #b1:hover{
         background-color: white;
