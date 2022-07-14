@@ -159,7 +159,7 @@ p{
     height: 500px;
     width: 490px;
     margin-left: 8%;
-    margin-top: 26px;
+    margin-top: -2px;
     position: static;
     background-color: #F5F5F5;
     box-shadow: 1.3px 1.3px ;
@@ -392,4 +392,25 @@ th{
     a{
         text-decoration: none; 
         color: black;
+    }
+    .barradeprogresodiv{
+        width: 70%;
+        margin-left: 2%;
+        margin-top:-2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        vertical-align: text-top;
+    }
+    #barra{
+        margin-top: 5px;
+        width: 85%;
+        height: 27px;
+    }
+    #etiquetabarra{
+        font-family: 'Open Sans', sans-serif; 
+        color: black;
+        font-size: 13px;
+        
+
     }
