@@ -8,20 +8,19 @@
   />
 </header>
 <body>
-    <div class="dgeneral">
+  <div class="dgeneral">
     <div class="divisor1">
     <div class="logo">
         <img src="C:\Users\TEMP\Documents\GitHub\ini234.github.io\Test\logoutoori.png">
     </div>
-   <div class="etitulo"><h1 class="animate__animated animate__bounceInUp">Planemos tu tablero</h1>
-
-</div> 
+   <div class="etitulo"><h1>Planemos tu tablero</h1>
+</div>
 </div>
 <div class="divisor2"><h2>Agrega o crea <b>una materia</b></h2>
     <hr id="hre1">
-    <div class="animate__animated animate__bounceInDown" class="container">
+    <div class="container">
         <div class="sem1">
-            <form >
+            <form action="C:\Users\TEMP\Documents\GitHub\ini234.github.io\Test\tablero\tableromenu.php.html">
             <select id="ms" class="form-control">
                 <option value="1">Selecciona...</option>
                 <option value="1">Introducción a matemáticas</option>
@@ -30,18 +29,75 @@
                 <option value="4">Álgebra</option>
                 <option value="4">Geometría</option>
                 <option value="5">Trigonometría</option>
-                <option value="6">Pre-cálculo	</option>
-                <option value="7">Cálculo	</option>
+                <option value="6">Pre-cálculo</option>
+                <option value="7">Cálculo</option>
             </select>
             <button id="b1">Siguiente →</button>
         </form>
         </div>
         <button id="b2">+ Agregar una materia</button>
     </div>
-    
 </div>
 </div>
-<div class="popup">Hola</div>
+<div class="animate__animated animate__fadeInRight" id="popup"><h2>Selecciona <b>una materia</b></h2><hr id="hre1">
+<div id="contacto">
+    <form action="C:\Users\TEMP\Documents\GitHub\ini234.github.io\Test\tablero\tableromenu.php.html">
+    <input type="text" placeholder="Nombre de la clase" id="Nombremateria" required="true"><br><br><br>
+    <select id="ms" class="form-control">
+        <option value="1">Área de interés </option>
+        <option value="1">Matemáticas</option>
+        <option value="2">Física</option>
+        <option value="3">Química</option>
+        <option value="4">Educación Financiera</option>
+        <option value="4">Contabilidad</option>
+        <option value="5">Economía</option>
+    </select><br><br><br>
+    <select id="ms" class="form-control">
+        <option value="1">Tema de interés</option>
+        <option value="1">Introducción a matemáticas</option>
+        <option value="2">Aritmética</option>
+        <option value="3">Pre-álgebra</option>
+        <option value="4">Álgebra</option>
+        <option value="4">Geometría</option>
+        <option value="5">Trigonometría</option>
+        <option value="6">Pre-cálculo</option>
+        <option value="7">Cálculo</option>
+    </select><br><br><br><br>
+    <select id="ys" class="fcr">
+            <option>Límites</option>
+            <option>Propiedades de las derivadas</option>
+            <option>Regla de la cadena</option>
+            <option>Regla del cociente y producto</option>
+            <option>Derivadas trigonométricas</option>
+            <option>Derivadas exponenciales</option>
+            <option>Derivadas de distinto orden	</option>
+            <option>Aplicaciones de las derivadas</option>
+            <option>Análisis de funciones diferenciales</option>
+            <option>Ecuaciones parametrizadas, coordenadas polares y funciones con valores vectoriales</option>
+            <option>Integrales</option>
+            <option>Aplicaciones de las integrales</option>
+            <option>Series</option>
+            <option>Transformada de Laplace</option>
+            <option>Funciones multivariables</option>
+            <option>Derivadas de funciones multivariables</option>
+            <option>Aplicacion de las derivadas multivariables</option>
+            <option>Integrar funciones multivariables</option>
+    </select><br><br><br>
+    <button id="b3">Siguiente →</button>
+</form>
+</div></div>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="multiple.js"></script>
+<script>
+    $(function() {
+        $('#ys').change(function() {
+            console.log($(this).val());
+        }).multipleSelect({
+            width: '60%'
+        });
+    });
+</script>
 </html>
