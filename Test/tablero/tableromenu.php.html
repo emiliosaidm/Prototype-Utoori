@@ -8,7 +8,7 @@
   />
   
 </header>
-<body>
+<body onload="movimiento()">
   <div class="interf">
     <div class="divisor1">
           <div class="logo">
@@ -30,7 +30,7 @@
                     <tr><th>Alumnos</th>
                       <th>Calificación</th></tr>
                       <tr>
-                        <td rowspan="2"><a href="C:\Users\TEMP\Documents\GitHub\ini234.github.io\Test\inicio.php.html">➕ Agregar Alumno</a></td>
+                        <td rowspan="2"><a>➕ Agregar Alumno</a></td>
                       </tr>
           
                         </table>
@@ -48,7 +48,6 @@
               <tr>
                   <td rowspan="2">No hay ningún tema próximo</td>
                </tr>
-    
             </table>
       
           </div>
@@ -62,7 +61,7 @@
        </div>
      </div>
     </div>
-         <div class="barradeprogresodiv"><p id="etiquetabarra">Progreso de la clase:</p><progress id="barra" max="100" value="70"></progress></div>
+         <div class="barradeprogresodiv"><p id="etiquetabarra">Progreso de la clase:</p><div id="barra"></div>
 </div>
 
 
@@ -80,5 +79,67 @@
                   <p id="mbar">👤 Mi perfil</p>
                   <p id="mbar">📤 Cerrar Sesión</p></div><img id="im2" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\menu.png">
   </div>
+<div id="agregaejercicio">
+     <div class="cajaejercicios">
+         <h2 class="titulodepopups">Crea una actividad</h2>
+         <hr id="hre2">
+         <div class="formularioeje">
+         <form id="form1">
+            <input type="text" placeholder="Nombre de la actividad..." class="inputspopup" required="true"> 
+                </input>
+              <input type="datetime-local" class="inputspopup"> 
+                </input>
+              <input type="time" class="inputspopup">
+                </input>
+         </form>
+         <div class="temariopop">Unicornio</div>
+         <div class="recursopop">Decacornio</div>
+        </div>
+        </div>
+        
+     </div>
+
+
+</div>
+
 </body>
+<script>
+function movimiento(){
+  var pbarra=document.getElementById('barra');
+  var progreso= 0;
+  var tiempo= setInterval(mov,10);
+  function mov(){
+    if(progreso>=100){
+      clearInterval(tiempo);
+    }
+    else{
+      progreso++;
+      pbarra.style.width=progreso+'%';
+      pbarra.innerHTML=progreso*1+'%';
+      }   
+  }
+}
+setTimeout(regreso,1000);
+
+function regreso(){
+  var pbarra=document.getElementById('barra');
+  var progreso= 100;
+  var tiempo= setInterval(mov,10);
+  function mov(){
+    if(progreso==0){
+      clearInterval(tiempo);
+    }
+    else{
+      progreso--;
+      pbarra.style.width=progreso+'%';
+      pbarra.innerHTML=progreso*1+'%';
+      }   
+  }
+}
+
+
+
+
+
+</script>
 </html>
