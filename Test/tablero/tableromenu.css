@@ -79,8 +79,8 @@ h1{
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         transition: 1s;
-        margin-top: 5%;
-        margin-left: 60%;
+        margin-top: 2%;
+        margin-left: 80%;
  }
  #b1:hover{
         background-color: white;
@@ -360,7 +360,7 @@ th{
     height: 247.3px;
     width: 490px;
     margin-left: 48%;
-    margin-top: 32.2%;
+    margin-top: 31%;
     position: absolute;
     top:0;
     background-color: #F5F5F5;
@@ -404,7 +404,7 @@ a{
      
 }
 #barra{
-        margin-top: 14px;
+        margin-top: 1.5%;
         width: 5%;
         height: 1.3rem;
         background-color: lightgreen;
@@ -424,20 +424,22 @@ a{
     position: static;
 }
 #agregaejercicio{
+    display: show;
     position: absolute;
     background-color: rgba(101, 100, 100, 0.653);
     top:0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 
 }
+
 .cajaejercicios{
     background-color: white;
     width: 50%;
     height: 70%;
     margin-left: 25%;
-    margin-top: 10%;
+    margin-top: 5%;
     box-shadow: 1.5px 1.5px 1.5px;
     border-radius: 10px;
     padding: 15px;
@@ -447,7 +449,7 @@ a{
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    
+    margin-top: -3%;
 
 }  
 #hre2{
@@ -478,7 +480,7 @@ a{
 }
 .formularioeje{
     display: grid;
-    height: 80%;
+    height: 75%;
     grid-template-columns: 65% 35%;
     grid-template-rows: 50% 50%;
 }
@@ -490,9 +492,51 @@ a{
 .temariopop{
     grid-column: 1;
     grid-row: 2;
+    border-radius: 5px;
+    border: 3px solid #8332e4;
+    background-color: #F5F5F5;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .recursopop{
     grid-column: 2;
     grid-row: 1/22;
-    height: 100;
+    border-radius: 5px;
+    border: 3px solid #8332e4;
+    background-color: #F5F5F5;
+    padding: 3%;
+    margin-top: 6%;
+    margin-right: 5%;
 }
+#busca2{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 3px solid #ff914d;
+    height: 2rem;
+    margin-top: -1%;
+    width: 90%;
+    margin-left: 5%;
+    transition: 1s;
+
+}
+#busca:hover{
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #ff914d;
+}
+#recursostitulo2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    margin-top: -1%;
+    border: none;
+    background-color: none;
+}
+#img3{
+    position: static;
+    height: 7%;
+    width: 5%;
+}
+

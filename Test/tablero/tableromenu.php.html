@@ -30,7 +30,7 @@
                     <tr><th>Alumnos</th>
                       <th>Calificación</th></tr>
                       <tr>
-                        <td rowspan="2"><a>➕ Agregar Alumno</a></td>
+                        <td rowspan="22"><a>➕ Agregar Alumno</a></td>
                       </tr>
           
                         </table>
@@ -53,7 +53,7 @@
           </div>
       </div>
       <div class="amenu">
-       <button class="dropdown-btn">➕ Agregar Recurso</button>
+       <button id="prueba"class="dropdown-btn">➕ Agregar Recurso</button>
        <div class="dcont">
         <a href="#">Actividad</a>
         <a href="#">Tarea</a>
@@ -79,9 +79,10 @@
                   <p id="mbar">👤 Mi perfil</p>
                   <p id="mbar">📤 Cerrar Sesión</p></div><img id="im2" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\menu.png">
   </div>
-<div id="agregaejercicio">
+<div id="agregaejercicio"> 
      <div class="cajaejercicios">
-         <h2 class="titulodepopups">Crea una actividad</h2>
+      <img onclick="" id="img3" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\sa.png">
+         <h2 class="titulodepopups">Crea un ejercicio</h2>
          <hr id="hre2">
          <div class="formularioeje">
          <form id="form1">
@@ -89,57 +90,65 @@
                 </input>
               <input type="datetime-local" class="inputspopup"> 
                 </input>
-              <input type="time" class="inputspopup">
+              <input type="time"  class="inputspopup">
                 </input>
          </form>
-         <div class="temariopop">Unicornio</div>
-         <div class="recursopop">Decacornio</div>
+         <div class="temariopop"> <h2 id="recursostitulo2">Busca temas</h2><input id="busca2"type="search" placeholder="🔎 Buscar"><table style="padding:10px">
+          <tr><th colspan="2">
+           Ejercicios sugeridos</th>
+          </tr>
+          <tr>
+              <td>Derivadas de ecuaciones polinomiales</td><td>🔎</td>
+          </tr>
+          <tr>
+            <td>Regla de la cadena, polinomios</td><td>🔎</td>
+        </tr>
+        </table></div>
+         <div class="recursopop"><h2 id="recursostitulo2">Busca temas</h2><hr id="hre1"></div>
         </div>
+        <button id="b1">Agregar</button>
         </div>
-        
+    
      </div>
 
 
 </div>
 
 </body>
+<script src="funcionalidad.js"></script>
 <script>
-function movimiento(){
-  var pbarra=document.getElementById('barra');
-  var progreso= 0;
-  var tiempo= setInterval(mov,10);
-  function mov(){
-    if(progreso>=100){
-      clearInterval(tiempo);
-    }
-    else{
-      progreso++;
-      pbarra.style.width=progreso+'%';
-      pbarra.innerHTML=progreso*1+'%';
-      }   
-  }
-}
-setTimeout(regreso,1000);
-
-function regreso(){
-  var pbarra=document.getElementById('barra');
-  var progreso= 100;
-  var tiempo= setInterval(mov,10);
-  function mov(){
-    if(progreso==0){
-      clearInterval(tiempo);
-    }
-    else{
-      progreso--;
-      pbarra.style.width=progreso+'%';
-      pbarra.innerHTML=progreso*1+'%';
-      }   
-  }
-}
-
-
-
-
-
+      function movimiento(){
+        var pbarra=document.getElementById('barra');
+        var progreso= 0;
+        var tiempo= setInterval(mov,10);
+        function mov(){
+          if(progreso>=100){
+            clearInterval(tiempo);
+          }
+          else{
+            progreso++;
+            pbarra.style.width=progreso+'%';
+            pbarra.innerHTML=progreso*1+'%';
+            }   
+        }
+      }
+      
+      setTimeout(regreso,1000);
+      
+      function regreso(){
+        var pbarra=document.getElementById('barra');
+        var progreso= 100;
+        var tiempo= setInterval(mov,10);
+        function mov(){
+          if(progreso==0){
+            clearInterval(tiempo);
+          }
+          else{
+            progreso--;
+            pbarra.style.width=progreso+'%';
+            pbarra.innerHTML=progreso*1+'%';
+            }   
+        }
+      }
 </script>
 </html>
