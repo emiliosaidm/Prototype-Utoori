@@ -8,7 +8,7 @@
   />
   
 </header>
-<body onload="movimiento()">
+<body onload="movimiento(),uru()">
   <div class="interf">
     <div class="divisor1">
           <div class="logo">
@@ -57,7 +57,7 @@
        <div class="dcont">
         <a href="#">Actividad</a>
         <a href="#">Tarea</a>
-        <a href="#">Examen</a>
+        <a id="exapop" href="#">Examen</a>
        </div>
      </div>
     </div>
@@ -82,7 +82,7 @@
 <div id="agregaejercicio"> 
      <div class="cajaejercicios">
       <img onclick="" id="img3" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\sa.png">
-         <h2 class="titulodepopups">Crea un ejercicio</h2>
+         <h2 class="titulodepopups">Crea un examen</h2>
          <hr id="hre2">
          <div class="formularioeje">
          <form id="form1">
@@ -104,7 +104,7 @@
             <td>Regla de la cadena, polinomios</td><td>🔎</td>
         </tr>
         </table></div>
-         <div class="recursopop"><h2 id="recursostitulo2">Busca temas</h2><hr id="hre1"></div>
+         <div class="recursopop"><h2 id="recursostitulo2">Ejercicios agregados</h2><hr id="hre1"></div>
         </div>
         <button id="b1">Agregar</button>
         </div>
@@ -116,39 +116,4 @@
 
 </body>
 <script src="funcionalidad.js"></script>
-<script>
-      function movimiento(){
-        var pbarra=document.getElementById('barra');
-        var progreso= 0;
-        var tiempo= setInterval(mov,10);
-        function mov(){
-          if(progreso>=100){
-            clearInterval(tiempo);
-          }
-          else{
-            progreso++;
-            pbarra.style.width=progreso+'%';
-            pbarra.innerHTML=progreso*1+'%';
-            }   
-        }
-      }
-      
-      setTimeout(regreso,1000);
-      
-      function regreso(){
-        var pbarra=document.getElementById('barra');
-        var progreso= 100;
-        var tiempo= setInterval(mov,10);
-        function mov(){
-          if(progreso==0){
-            clearInterval(tiempo);
-          }
-          else{
-            progreso--;
-            pbarra.style.width=progreso+'%';
-            pbarra.innerHTML=progreso*1+'%';
-            }   
-        }
-      }
-</script>
 </html>
