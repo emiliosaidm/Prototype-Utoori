@@ -506,6 +506,7 @@ a{
     padding: 3%;
     margin-top: 6%;
     margin-right: 5%;
+    width: 80%;
 }
 #todo{
     background-color: rgba(255, 255, 255, 0);
@@ -547,7 +548,10 @@ a{
 li{
     font-family: 'Open Sans', sans-serif; 
     font-size: 20px;
+    width: max-content;
 }
+
+
 
 
 

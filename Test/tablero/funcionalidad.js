@@ -47,7 +47,8 @@ function movimiento(){
         }   
     }
   }
-  const todos = JSON.parse(localStorage.getItem('todos'))||[];
+  
+  const todos = [];
   const render=()=>{
       const todolist = document.getElementById('todolist');
       const todostemplate=todos.map(t=>{
