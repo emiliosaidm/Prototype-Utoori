@@ -538,11 +538,16 @@ a{
     width: 5%;
 }
 #hre3{
-    width: 50%;
+    width: 60%;
     height: 5px;
     background-color: #8332e4;
     border: none;
     margin-top: -15px;
 }
+li{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 20px;
+}
+
 
 
