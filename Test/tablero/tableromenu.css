@@ -360,7 +360,7 @@ th{
     height: 247.3px;
     width: 490px;
     margin-left: 48%;
-    margin-top: 31%;
+    margin-top: 32%;
     position: absolute;
     top:0;
     background-color: #F5F5F5;
@@ -507,7 +507,7 @@ a{
     margin-top: 6%;
     margin-right: 5%;
 }
-#busca2{
+#todo{
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-bottom: 3px solid #ff914d;
@@ -537,4 +537,12 @@ a{
     height: 7%;
     width: 5%;
 }
+#hre3{
+    width: 50%;
+    height: 5px;
+    background-color: #8332e4;
+    border: none;
+    margin-top: -15px;
+}
+
 

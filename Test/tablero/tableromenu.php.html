@@ -86,27 +86,40 @@
          <hr id="hre2">
          <div class="formularioeje">
          <form id="form1">
-            <input type="text" placeholder="Nombre de la actividad..." class="inputspopup" required="true"> 
+            <input type="text" placeholder="Nombre de la actividad..." class="inputspopup" required="true" > 
                 </input>
               <input type="datetime-local" class="inputspopup"> 
                 </input>
               <input type="time"  class="inputspopup">
                 </input>
          </form>
-         <div class="temariopop"> <h2 id="recursostitulo2">Busca temas</h2><input id="busca2"type="search" placeholder="🔎 Buscar"><table style="padding:10px">
-          <tr><th colspan="2">
+      <datalist id="listamodelos" >
+          <option value="Camaro">
+          <option value="Corvette">
+          <option value="Impala">
+          <option value="Colorado">
+      </datalist>
+         <div class="temariopop"> 
+          
+             <h2 id="recursostitulo2">Busca temas</h2><form id="formis"><input id="todo"type="text" placeholder="🔎 Buscar" list="listamodelos"></form><table style="padding:10px">
+             <tr><th colspan="2">
            Ejercicios sugeridos</th>
-          </tr>
-          <tr>
+             </tr>
+             <tr>
               <td>Derivadas de ecuaciones polinomiales</td><td>🔎</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
             <td>Regla de la cadena, polinomios</td><td>🔎</td>
-        </tr>
-        </table></div>
-         <div class="recursopop"><h2 id="recursostitulo2">Ejercicios agregados</h2><hr id="hre1"></div>
-        </div>
-        <button id="b1">Agregar</button>
+           </tr>
+           </table>
+       </div>
+         <div class="recursopop"><h2 id="recursostitulo2">Ejercicios agregados</h2><hr id="hre3">
+              
+        <ul id="todolist">
+        </ul>
+            </div>
+          </div>
+        <button id="b1">➕ Agregar</button>
         </div>
     
      </div>
