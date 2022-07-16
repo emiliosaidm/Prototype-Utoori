@@ -1,14 +1,25 @@
 const abrir=document.getElementById("exapop");
 const divisor=document.getElementById("agregaejercicio");
 const cerrar=document.getElementById("img3");
+const nuevoalumno=document.getElementById('nuevoalumno');
+const divalumno=document.getElementById('agregaalumno');
+const cierraalumno=document.getElementById('img4');
 
-function uru(){
-    divisor.style.display='none';
-}
-abrir.addEventListener("click",()=>{
-    divisor.style.display='';
+nuevoalumno.addEventListener("click",()=>{
+    divalumno.style.display='grid';
     
 })
+
+cierraalumno.addEventListener("click",()=>{
+    divalumno.style.display='none';
+    
+})
+
+abrir.addEventListener("click",()=>{
+    divisor.style.display='grid';
+    
+})
+
 cerrar.addEventListener("click",()=>{
     divisor.style.display='none';
     
@@ -30,7 +41,9 @@ function movimiento(){
     }
   }
   
-  setTimeout(regreso,1000);
+  setTimeout(regreso,1200);
+    
+  setTimeout(movimiento,20);
   
   function regreso(){
     var pbarra=document.getElementById('barra');
@@ -78,8 +91,41 @@ function movimiento(){
       localStorage.setItem('todos',todosstring)
      render();
   }
+
   }
-  
+    const todosa = [];
+  const rendera=()=>{
+      const todolista = document.getElementById('alumnili');
+      const todosatemplate=todosa.map(g=>{
+          return "<li>"+g+"</li>";
+      })
+      todolista.innerHTML=todosatemplate.join('')
+      console.log(todosatemplate)
+      const selectodoa= document.querySelectorAll('#alumnili li')
+      selectodoa.forEach((selectodoa,s)=>{
+      selectodoa.addEventListener('click',()=>{
+          selectodoa.parentNode.removeChild(selectodoa);
+          todosa.splice(s,1);
+          rendera();
+        }) 
+      })
+  }
+  rendera();
+ 
+  const formsa=document.getElementById('formu');
+  formsa.onsubmit =(jassu) => {
+      jassu.preventDefault(); 
+      const todoa=document.getElementById('todasa');   
+
+      const todotexta=todoa.value
+      todoa.value='';
+      todosa.push(todotexta);
+      const todosastring= JSON.stringify(todosa);
+      localStorage.setItem('todosa',todosastring)
+     rendera();
+  }
+
+
   
 
       

@@ -8,7 +8,7 @@
   />
   
 </header>
-<body onload="movimiento(),uru()">
+<body onload="movimiento()">
   <div class="interf">
     <div class="divisor1">
           <div class="logo">
@@ -30,7 +30,7 @@
                     <tr><th>Alumnos</th>
                       <th>Calificación</th></tr>
                       <tr>
-                        <td rowspan="22"><a>➕ Agregar Alumno</a></td>
+                        <td id="nuevoalumno"><a>➕ Agregar Alumno</a></td>
                       </tr>
           
                         </table>
@@ -40,7 +40,7 @@
       <div id="buscatema">
     
         <h2 id="recursostitulo">Busca temas</h2><hr id="hre1">
-          <div id="buscador"> <input id="busca"type="search" placeholder="🔎 Buscar"><br><br>
+          <div id="buscador"> <input id="busca" type="search" placeholder="🔎 Buscar"><br><br>
             <table style="padding:10px">
               <tr><th colspan="2">
                 Próximo temas</th>
@@ -65,7 +65,7 @@
 </div>
 
 
-
+<!--Menu principal profesor-->
 <div class="animate__animated animate__fadeInRight" id="menu"><br>
                   <p id="mbaru">📺 Tu tablero</p>
                   <p id="mbar">📅 Calendario</p>
@@ -79,54 +79,85 @@
                   <p id="mbar">👤 Mi perfil</p>
                   <p id="mbar">📤 Cerrar Sesión</p></div><img id="im2" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\menu.png">
   </div>
-<div id="agregaejercicio"> 
-     <div class="cajaejercicios">
-      <img onclick="" id="img3" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\sa.png">
-         <h2 class="titulodepopups">Crea un examen</h2>
-         <hr id="hre2">
-         <div class="formularioeje">
-         <form id="form1">
-            <input type="text" placeholder="Nombre de la actividad..." class="inputspopup" required="true" > 
-                </input>
-              <input type="datetime-local" class="inputspopup"> 
-                </input>
-              <input type="time"  class="inputspopup">
-                </input>
-         </form>
-      <datalist id="listamodelos" >
-          <option value="Camaro">
-          <option value="Corvette">
-          <option value="Impala">
-          <option value="Colorado">
-      </datalist>
-         <div class="temariopop"> 
-          
-             <h2 id="recursostitulo2">Busca temas</h2><form id="formis"><input id="todo"type="text" placeholder="🔎 Buscar" list="listamodelos"></form><table style="padding:10px">
-             <tr><th colspan="2">
-           Ejercicios sugeridos</th>
-             </tr>
-             <tr>
-              <td>Derivadas de ecuaciones polinomiales</td><td>🔎</td>
-            </tr>
-            <tr>
-            <td>Regla de la cadena, polinomios</td><td>🔎</td>
-           </tr>
-           </table>
-       </div>
-         <div class="recursopop"><h2 id="recursostitulo2">Ejercicios agregados</h2><hr id="hre3">
-              
-        <ul id="todolist">
-        </ul>
-            </div>
+
+  <!--Pop-up para agregar un alumno-->
+      <div id="agregaalumno">
+           <div class="cajaalumno">
+              <div class="talumnos">
+                  <img id="img4" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\sa.png">
+                     <h2 style="margin-top: -5%;" class="titulodepopupsd">Agregar alumnos</h2>
+                     <hr id="hre2">
+              </div>
+              <div class="alumnospop">
+                  <form style="margin-top:10%" id="formis"> 
+                    <input style="margin-left: 0%; border-bottom: 5px solid #ff914d; width: 100%;margin-top: 5%;" class="inputspopup" id="todo" type="text" placeholder="Nombre del alumno"></input>
+                  </form>
+                    <input style="width: 90%; height: 28px;" type="number" placeholder="# de alumnos"  class="inputspopup"></input>
+                    <h2 class="recursostitulo2" style="margin-top: 14%;">Importar alumnos</h2>
+                    <p id="infocsv">Importa tus alumnos en un archivo CSV desde Moodle, Canvas u otra LMS.</p>
+                    <input type="file" class="inputspopupdos"></input>
+                    <button id="bo">➕ Agregar</button>
+              </div>
+              <div class="alumnos">
+                    <h2 class="recursostitulo2">Alumnos agregados</h2>
+                    <hr id="hre2">
+                    <ul id="todolist">
+                    </ul>
+              </div>
           </div>
-        <button id="b1">➕ Agregar</button>
+      </div>
+  
+<!--Pop-up para agregar un ejercicio-->
+  <div id="agregaejercicio"> 
+    <div class="cajaejercicios">
+            <img onclick="" id="img3" src="C:\Users\emili\Documents\ini234.github.io\Test\tablero\sa.png">
+            <h2 class="titulodepopups">Crea un examen</h2>
+            <hr id="hre2">
+      <div class="formularioeje">
+                 <form id="form1">
+                  <input type="text" placeholder="Nombre de la actividad..." class="inputspopup" required="true" > </input>
+                  <input type="datetime-local" class="inputspopup"> </input>
+                  <input type="time" class="inputspopup"></input>
+                </form>     
+                    <!--Info para menu desplegable:-->
+                    <datalist id="listamodelos">
+                      <option value="Límite cuando x tiende a un escalar">
+                      <option value="Límite cuando tiende a cero">
+                      <option value="Derivadas por definición">
+                      <option value="Derivadas de ecuaciónes lineales de primer orden">
+                      <option value="Derivadas de ecuaciónes polinomiales de primer orden">
+                      <option value="Aplicación de derivadas de segundo orden">
+                      <option value="Concavidad y convexidad de una función">
+                      <option value="Derivadas con senos y cosenos">
+                      <option value="Aplicación de derivadas de primer orden">
+                   </datalist>
+        <div class="temariopop"> 
+              <h2 class="recursostitulo2">Busca temas</h2>
+              <form id="formu">
+                <input id="todasa" type="text" placeholder="🔎 Buscar" list="listamodelos"></input>
+              </form>
+              <table style="padding:10px">
+               <tr>
+                <th colspan="2">Ejercicios sugeridos</th>
+               </tr>
+               <tr>
+                <td>Derivadas de ecuaciones polinomiales</td><td>🔎</td>
+               </tr>
+               <tr>
+                <td>Regla de la cadena, polinomios</td><td>🔎</td>
+               </tr>
+              </table>
         </div>
-    
+        <div class="recursopop">
+              <h2 class="recursostitulo2" style="margin-top: 2%;">Ejercicios agregados</h2>
+              <hr id="hre3">
+              <ul id="alumnili"></ul>
+        </div>
      </div>
-
-
-</div>
-
+          <button id="b1">➕ Agregar</button>
+   </div>
+  </div>
+</div><!--Cierrre de interfaz-->
 </body>
 <script src="funcionalidad.js"></script>
 </html>

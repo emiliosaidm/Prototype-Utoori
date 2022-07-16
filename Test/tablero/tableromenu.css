@@ -360,7 +360,7 @@ th{
     height: 247.3px;
     width: 490px;
     margin-left: 48%;
-    margin-top: 32%;
+    margin-top: 30.9%;
     position: absolute;
     top:0;
     background-color: #F5F5F5;
@@ -423,6 +423,7 @@ a{
     position: static;
 }
 #agregaejercicio{
+    display: none;
     position: absolute;
     background-color: rgba(101, 100, 100, 0.653);
     top:0;
@@ -435,7 +436,7 @@ a{
 .cajaejercicios{
     background-color: white;
     width: 50%;
-    height: 70%;
+    height: 80%;
     margin-left: 25%;
     margin-top: 5%;
     box-shadow: 1.5px 1.5px 1.5px;
@@ -506,7 +507,6 @@ a{
     padding: 3%;
     margin-top: 6%;
     margin-right: 5%;
-    width: 80%;
 }
 #todo{
     background-color: rgba(255, 255, 255, 0);
@@ -524,7 +524,7 @@ a{
     border: none;
     border-bottom: 3px solid #ff914d;
 }
-#recursostitulo2{
+.recursostitulo2{
     text-align: center;
     font-size: 25px;
     font-family: 'Open Sans', sans-serif; 
@@ -536,7 +536,7 @@ a{
 #img3{
     position: static;
     height: 7%;
-    width: 5%;
+    width: 6%;
 }
 #hre3{
     width: 60%;
@@ -550,8 +550,121 @@ li{
     font-size: 20px;
     width: max-content;
 }
+#agregaalumno{
+    position: absolute;
+    background-color: rgba(101, 100, 100, 0.653);
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
 
 
+}
+.cajaalumno{
+    background-color: white;
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+    margin-top: 5%;
+    box-shadow: 1.5px 1.5px 1.5px;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 20% 80%
 
+}
+.talumnos{
+    grid-column: 1/22;
+    grid-row: 1;
+
+}
+.alumnospop{
+ grid-column: 1;
+ grid-row: 2;
+ margin-left: 5%;
+
+}
+.alumnos{
+    grid-column: 2;
+    grid-row: 2;
+    border: 3px solid #8332e4;
+    background-color: #F5F5F5;
+    padding: 3%;
+    margin-top: 6%;
+    margin-right: 4%;
+    margin-left: 6%;
+    border-radius: 5px;
+    height: 85%;
+
+
+}
+.titulodepopupsd{
+    align-content: center;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.inputspopupdos{
+    height: max-content;
+    width: 100%;
+    border: none;
+    transition: 1s;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 8px;
+}
+#infocsv{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    text-align: center;
+}
+.formsa{
+    height: max-content;
+    width: max-content;
+    margin-left: 30px;
+}
+#formis{
+    width: 90%;
+    margin-top: 10px;
+}
+#bo{
+    width: max-content;
+    border:none;
+    background-color: white;
+    border-bottom: 5px solid #8332e4;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 1s;
+    margin-top: 14%;
+    margin-left: 30%;
+
+}
+#bo:hover{
+    background-color: white;
+    border-bottom: 5px solid #ff914d;
+}
+#img4{
+    position: static;
+    height: 35%;
+    width: 5%;
+}
+#todasa{
+    height: 17.5%;
+    width: 80%;
+    border: none;
+    border-bottom:5px solid #ff914d ;
+    transition: 1s;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+    outline: none;
+    margin-left: 10%;
+}
+#todasa:hover{
+    border-bottom:5px solid #8332e4 ;
+    outline: none;
+}
 
 
