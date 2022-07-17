@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<header>
+    <title>Vista previa</title>
+    <link rel= "stylesheet" href="pruebaejercicio.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</header>
+<body>
+   <img id="logo" src="logonegro.png">
+    <div class="cajadetitulos">
+      <h1>Vista previa de ejercicio</h1>
+      <h2><b>Ej. </b>Derivada con una ecuación polinomial de grado n</h2>
+    </div>
+  <div class="cajadeejercicio">
+        <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+        <p><b>Respuesta:</b></p>
+     <div id="respuestavalidada1"><p>\(f'(x)=12x^{3}-18x+1\) ✅</p></div>
+        <div id="zonaeditorp1">
+         <main>
+           <mathlive-mathfield class="cuadroderespuesta" id="mf" ref="mathfield" :options="{smartFence:false, virtualKeyboardMode:'onfocus'}" @focus="ping"
+             :on-keystroke="displayKeystroke" v-model="formula">f'(x)=
+           </mathlive-mathfield>
+         </main>
+       </div>
+      <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+   </div>
+
+    <div class="funcionalidades"> 
+        <button id="autores" >Autoresponder</button>
+        <button id="validar">Validar</button>
+        <button id="?">?</button>
+        <button onclick="render()">↻</button>
+    </div>
+    <div id="cajaretroalimentacion"><p><b>¿Cómo se resuelve esta pregunta?</b></p>
+        <p class="textoretro">El polinomio \(f(x)=3x^4-9x^2+x\) se puede derivar utilizando diferentes metodologías.<br><br>
+          <b><u>Derivando utilizando la regla del exponente</u></b><br><br>
+            Generalmente, derivar un polinomio por regla del exponente es la mejor alternativa ya que es muy sencillo. <br><br> <b> Regla del exponente</b> \(\rightarrow \space \frac{\text{d}}{\text{d}x}\left[x^a\right]=ax^{a-1}, \space a\in \mathbb{R} \)
+            <br><br> Por conmutatividad, linealidad y propiedades de los limites podemos desglosar la derivada de \(f\) en:<br><br>
+            \(f'(x)=3\frac{\text{d}}{\text{d}x}[x^4]-9\frac{\text{d}}{\text{d}x}[x^2]+\frac{\text{d}}{\text{d}x}[x]\)<br><br>
+            <b>Aplicando la regla del exponente \(\rightarrow f'(x)=3(4)x^{4-1}-9(2)x^{2-1}+(1)x^{1-1}\)</b><br><br>
+            \(\therefore \space f'(x)=12x^{3}-18x+1\)
+            <p class="notasaclaratorias"><b>💡Recuerda:</b> Por regla de los exponentes \(\frac{x^n}{x^m}=x^{n-m} \space \therefore \frac{x}{x}=x^{1-1}=x^0=1\)</p>
+    </div>
+    <div class="espaciador">&nbsp;</div>
+</body>
+<script src="main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="module">
+  import Vue from "https://cdn.jsdelivr.net/npm/vue/dist/vue.esm.browser.js";
+  import * as MathLive from "https://unpkg.com/mathlive/dist/mathlive.mjs";
+  import MathfieldComponent from "https://unpkg.com/mathlive/dist/vue-mathlive.mjs";
+  Vue.config.devtools = true;
+
+  Vue.use(MathfieldComponent, MathLive);
+  // The default tag for mathfields is <mathlive-mathfield>
+  // A custom tag can be defined using:
+  // ```Vue.component("custom-tag", Mathfield);```
+
+  new Vue({
+    el: "main",
+    data: {
+      formula: "",
+      keystroke: "",
+    },
+    methods: {
+      sayIt: function (event) {
+        this.$refs.mathfield.perform(["speak", "all"]);
+      },
+      setIt: function (event) {
+        this.formula = "x=-b\\pm \\frac {\\sqrt{b^2-4ac}}{2a}";
+      },
+      ping: function () {
+        console.log("ping");
+      },
+      displayKeystroke: function (keystroke, _ev) {
+        this.keystroke = keystroke;
+        return true;
+      },
+      asSpokenText: function () {
+        return this.$refs.mathfield
+          ? this.$refs.mathfield.getValue("spoken")
+          : "";
+      },
+    },
+  });
+</script>
+<script src="prueba.js"></script>
+</html>

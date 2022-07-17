@@ -1,0 +1,32 @@
+{
+  "name": "vue-mathlive",
+  "version": "1.0.0",
+  "description": "Example of using the Vue wrapper for MathLive math editor",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server --cors -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnog/vue-mathlive.git"
+  },
+  "keywords": [
+    "vue",
+    "math",
+    "editor",
+    "mathlive",
+    "vuejs"
+  ],
+  "author": "https://github.com/arnog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnog/vue-mathlive/issues"
+  },
+  "homepage": "https://github.com/arnog/vue-mathlive#readme",
+  "dependencies": {
+    "mathlive": "latest"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

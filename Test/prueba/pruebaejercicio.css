@@ -1,0 +1,173 @@
+body{
+display: grid;
+grid-template-columns: 13% 23% 55% 10%;
+grid-template-rows: max-content max-content max-content 5% 2% max-content max-content ;
+width: 100%;
+height: max-content;
+overflow-x: hidden;
+
+}
+/* Definición de Grilletas usables*/
+
+#logo{
+    grid-column: 1;
+    grid-row: 1;
+    height: max-content;
+    width: 75%;
+    margin-left: 20%;
+}
+.cajadetitulos{
+    grid-column: 1/4;
+    grid-row: 2;
+    margin-left: 10%;
+    margin-top: 0%;
+
+}
+.cajadeejercicio{
+    grid-column: 1/4;
+    grid-row: 3;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    margin-left: 10%;
+    padding-left: 3%;
+    padding-top: 0.2%;
+    height: max-content;
+
+}
+.funcionalidades{
+    grid-column: 2/4;
+    grid-row:4;
+    margin-left:-4.5%;
+    margin-top: 2%;
+}
+#cajaretroalimentacion{
+    display: none;
+    grid-column:1/4 ;
+    grid-row: 6;
+    margin-left: 10%;
+    margin-top: 1%;
+    border-radius: 10px;
+    padding-left: 3%;
+    padding-top: 0.2%;
+    background-color: #F5F5F5;
+}
+.espaciador{
+    grid-column: 0/4;
+    grid-row: 7;
+
+}
+
+
+/* Definición de fonts*/
+
+h1{
+    
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    width: max-content;
+    margin-left: 20px;
+}
+h2{
+   
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: max-content;
+    margin-left: 20px;
+    color: gray;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.notasaclaratorias{
+    font-size: 15px; 
+    margin-bottom: 2%;
+}
+.textoretro{
+    font-size: 17px;
+    
+}
+
+/* Editor de mate*/
+main {
+  margin-right: 10%;
+}
+.mathfield {
+    border: 1px solid #ddd;
+    padding:5px;
+    margin: 10px 0 10px 0;
+    border-radius:5px;
+    background-color: #fff;
+    font-size: 20px;
+}
+.output {
+    padding:5px;
+    margin: 20px 0 20px 0;
+    border-radius:5px;
+    border: 1px solid #000;
+    font-size: 50px;
+    font-family: "Source Code Pro", Menlo, "Bitstream Vera Sans Mono", Monaco, Courier, "Andale Mono", monospace;
+    color: #f0c674;
+    background: #35434e;
+}
+label {
+    font-weight: bold;
+}
+button {
+    background: none;
+    border:	1px solid rgba(0, 0, 0, .12);
+    border-radius: 7px;
+    color: #000;
+    fill: #8332e4;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    margin: 0.2% 0% 2% 1%;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    letter-spacing: 0.08929em;
+    box-shadow:  0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 3px 1px -2px rgba(0, 0, 0, 0.12); 
+    }
+button:first-child {
+    margin-left: 0;
+}
+button:hover {
+    background-color: rgba(0,0,0,0.08);
+}
+button:active{
+    background-color: white;
+}    
+/* Cuadros de respuesta*/
+.cuadroderespuesta{
+    display: block;
+    font-size: 22px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+#respuestavalidada1{
+    height: 5%;
+    width: max-content;
+    background-color: white ;
+    border: 3px solid rgb(13, 139, 13);
+    border-radius: 5px;
+    display: none;
+
+}

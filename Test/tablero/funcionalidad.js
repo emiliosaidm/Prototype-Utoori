@@ -125,8 +125,6 @@ function movimiento(){
      rendera();
   }
 
-
-  
-
-      
-      
+  function pruebadepregunta (){ 
+    window.open('../prueba/pruebaejercicio.php.html',"ventana1","width=700,height=400,scrollbars=NO") 
+ }

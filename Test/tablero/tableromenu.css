@@ -393,6 +393,7 @@ a{
         text-decoration: none; 
         color: black;
 }
+
 .barradeprogresodiv{
         width: 80%;
         margin-left: 3%;
@@ -466,7 +467,7 @@ a{
     transition: 1s;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 20px;
+    margin-top: 5%;
 
 }
 .inputspopup:focus{
@@ -666,5 +667,6 @@ li{
     border-bottom:5px solid #8332e4 ;
     outline: none;
 }
-
-
+a:hover{
+    cursor: pointer;
+}

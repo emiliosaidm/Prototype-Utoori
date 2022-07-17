@@ -7,6 +7,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   
+
 </header>
 <body onload="movimiento()">
   <div class="interf">
@@ -89,11 +90,13 @@
                      <hr id="hre2">
               </div>
               <div class="alumnospop">
-                  <form style="margin-top:10%" id="formis"> 
-                    <input style="margin-left: 0%; border-bottom: 5px solid #ff914d; width: 100%;margin-top: 5%;" class="inputspopup" id="todo" type="text" placeholder="Nombre del alumno"></input>
+                  <form style="margin-top: 5%" id="formis"> 
+                    <input style="margin-left: 0%; border-bottom: 5px solid #ff914d; width: 100%;margin-top: 2.5%;" class="inputspopup" id="todo" type="text" placeholder="Nombre del alumno"></input>
                   </form>
-                    <input style="width: 90%; height: 28px;" type="number" placeholder="# de alumnos"  class="inputspopup"></input>
-                    <h2 class="recursostitulo2" style="margin-top: 14%;">Importar alumnos</h2>
+                    <input style="margin-left: 0%; border-bottom: 5px solid #ff914d; width: 100%;margin-top: 2.5%;" class="inputspopup" id="todo" type="email" placeholder="Correo electrónico"></input>
+                  
+                    <input style="width: 90%; height: 28px; margin-top: 2.5%;" type="number" placeholder="# de alumnos"  class="inputspopup" required="true"></input>
+                    <h2 class="recursostitulo2" style="margin-top: 2.5%;">Importar alumnos</h2>
                     <p id="infocsv">Importa tus alumnos en un archivo CSV desde Moodle, Canvas u otra LMS.</p>
                     <input type="file" class="inputspopupdos"></input>
                     <button id="bo">➕ Agregar</button>
@@ -141,7 +144,7 @@
                 <th colspan="2">Ejercicios sugeridos</th>
                </tr>
                <tr>
-                <td>Derivadas de ecuaciones polinomiales</td><td>🔎</td>
+                <td>Derivadas de ecuaciones polinomiales</td><td><a onclick="pruebadepregunta()">🔎</a></td>
                </tr>
                <tr>
                 <td>Regla de la cadena, polinomios</td><td>🔎</td>

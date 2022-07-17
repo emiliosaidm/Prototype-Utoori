@@ -1,0 +1,158 @@
+body{
+display: grid;
+grid-template-columns: 15% 65% 20% ;
+grid-template-rows: max-content max-content ;
+width: 100%;
+height: max-content;
+overflow-x: hidden;
+
+}
+/* Definición de Grilletas usables*/
+
+#logo{
+    grid-column: 1;
+    grid-row: 1;
+    height: max-content;
+    width: 75%;
+    margin-left: 20%;
+}
+.cotenidodeexamen{
+    grid-column: 2/3;
+    grid-row: 2;
+/*Menu lateral */
+}
+.menu{
+    grid-column: 3;
+    grid-row: 2;
+    border-radius: 10px;
+    position: sticky;
+    background-color: #F5F5F5;
+    margin: 10%;
+    margin-top: 35%;
+    margin-right: 15%;
+    padding: 4%;
+    height: max-content;
+}
+.cuadrodepreguntas{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.amenu{
+    border: 1px solid black;
+    margin: 2%;
+    padding: 2.5%;
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    height: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.funcionalidades{
+    grid-column: 2/4;
+    grid-row:4;
+    margin-left:-4.5%;
+    margin-top: 2%;
+}
+#cajaretroalimentacion{
+    display: none;
+    grid-column:1/4 ;
+    grid-row: 6;
+    margin-left: 10%;
+    margin-top: 1%;
+    border-radius: 10px;
+    padding-left: 3%;
+    padding-top: 0.2%;
+    background-color: #F5F5F5;
+}
+.espaciador{
+    grid-column: 0/4;
+    grid-row: 7;
+
+}
+
+
+/* Definición de fonts*/
+
+h1{
+    
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    width: max-content;
+    margin-left: 20px;
+    margin-bottom: 5%;
+}
+h2{
+   
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: max-content;
+    margin-left: 20px;
+    color: gray;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.notasaclaratorias{
+    font-size: 15px; 
+    margin-bottom: 2%;
+}
+.textoretro{
+    font-size: 17px;
+    
+}
+
+/* Editor de mate*/
+main {
+  margin-right: 10%;
+}
+.mathfield {
+    border: 1px solid #ddd;
+    padding:5px;
+    margin: 10px 0 10px 0;
+    border-radius:5px;
+    background-color: #fff;
+    font-size: 20px;
+}
+.output {
+    padding:5px;
+    margin: 20px 0 20px 0;
+    border-radius:5px;
+    border: 1px solid #000;
+    font-size: 50px;
+    font-family: "Source Code Pro", Menlo, "Bitstream Vera Sans Mono", Monaco, Courier, "Andale Mono", monospace;
+    color: #f0c674;
+    background: #35434e;
+}
+label {
+    font-weight: bold;
+}
+    
+/* Cuadros de respuesta*/
+.ejercicio{
+    background-color:#F5F5F5; 
+    padding: 2.5%;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+.cuadroderespuesta{
+    display: block;
+    font-size: 22px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+.respuesta{
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 22px;
+    padding: 5px;
+}

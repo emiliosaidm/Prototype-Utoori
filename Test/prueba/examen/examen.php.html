@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<header>
+    <title>Vista previa</title>
+    <link rel= "stylesheet" href="examen.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</header>
+<body>
+   <img id="logo" src="..\logonegro.png">
+   <div class="menu"><h2>Tu examen</h2>
+     <div class="cuadrodepreguntas">
+      <a class="amenu">Ej.1</a><a class="amenu">Ej.2</a><a class="amenu">Ej.3</a><a class="amenu">Ej.4</a><a class="amenu">Ej.5</a><a class="amenu">Ej.6</a>
+     </div>
+   </div>
+    <div class="cotenidodeexamen">
+     <h1>Vista Previa de examen: "Repaso de derivadas"</h1>
+     <!--Primer Ejercicio -->
+     <div style='margin-top: 0%'class="ejercicio">
+       <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+       <p><b>Respuesta:</b></p>
+        <main>
+          <mathlive-mathfield class="cuadroderespuesta" id="mf" ref="mathfield" :options="{smartFence:false, virtualKeyboardMode:'onfocus'}" @focus="ping"
+            :on-keystroke="displayKeystroke" v-model="formula">f'(x)=
+          </mathlive-mathfield>
+        </main>
+        <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+     </div>
+     <!--Segundo Ejercicio -->
+     <div class="ejercicio">
+      <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+      <p><b>Respuesta:</b></p>
+       <main>
+         <div class="respuesta">\(f(x)=3x^4-9x^2+x\)</div>
+       </main>
+       <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+    </div>
+     <!--Tercero Ejercicio -->
+     <div class="ejercicio">
+      <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+      <p><b>Respuesta:</b></p>
+       <main>
+         <mathlive-mathfield class="cuadroderespuesta" id="mf" ref="mathfield" :options="{smartFence:false, virtualKeyboardMode:'onfocus'}" @focus="ping"
+           :on-keystroke="displayKeystroke" v-model="formula">f'(x)=
+         </mathlive-mathfield>
+       </main>
+       <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+    </div>
+     <!--Cuarto Ejercicio -->
+     <div class="ejercicio">
+      <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+      <p><b>Respuesta:</b></p>
+         <mathlive-mathfield class="cuadroderespuesta" id="mf" ref="mathfield" :options="{smartFence:false, virtualKeyboardMode:'onfocus'}" @focus="ping"
+           :on-keystroke="displayKeystroke" v-model="formula">f'(x)=
+         </mathlive-mathfield>
+       <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+    </div>
+     <!--Quinto Ejercicio -->
+     <div class="ejercicio">
+      <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+      <p><b>Respuesta:</b></p>
+       <main>
+         <mathlive-mathfield class="cuadroderespuesta" id="mf" ref="mathfield" :options="{smartFence:false, virtualKeyboardMode:'onfocus'}" @focus="ping"
+           :on-keystroke="displayKeystroke" v-model="formula">f'(x)=
+         </mathlive-mathfield>
+       </main>
+       <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+    </div>
+     <!--Sexto Ejercicio -->
+     <div class="ejercicio">
+      <p>Encuentra la <b>primera derivada</b> del polinomio \(f(x)=3x^4-9x^2+x\)</p>
+      <p><b>Respuesta:</b></p>
+       <main>
+         <mathlive-mathfield class="cuadroderespuesta" id="mf" ref="mathfield" :options="{smartFence:false, virtualKeyboardMode:'onfocus'}" @focus="ping"
+           :on-keystroke="displayKeystroke" v-model="formula">f'(x)=
+         </mathlive-mathfield>
+       </main>
+       <p class="notasaclaratorias"><b>Nota:</b> Cualquier respuesta equivalente es válida.</p>
+    </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="module">
+  import Vue from "https://cdn.jsdelivr.net/npm/vue/dist/vue.esm.browser.js";
+  import * as MathLive from "https://unpkg.com/mathlive/dist/mathlive.mjs";
+  import MathfieldComponent from "https://unpkg.com/mathlive/dist/vue-mathlive.mjs";
+  Vue.config.devtools = true;
+
+  Vue.use(MathfieldComponent, MathLive);
+  // The default tag for mathfields is <mathlive-mathfield>
+  // A custom tag can be defined using:
+  // ```Vue.component("custom-tag", Mathfield);```
+
+  new Vue({
+    el: "main",
+    data: {
+      formula: "",
+      keystroke: "",
+    },
+    methods: {
+      sayIt: function (event) {
+        this.$refs.mathfield.perform(["speak", "all"]);
+      },
+      setIt: function (event) {
+        this.formula = "x=-b\\pm \\frac {\\sqrt{b^2-4ac}}{2a}";
+      },
+      ping: function () {
+        console.log("ping");
+      },
+      displayKeystroke: function (keystroke, _ev) {
+        this.keystroke = keystroke;
+        return true;
+      },
+      asSpokenText: function () {
+        return this.$refs.mathfield
+          ? this.$refs.mathfield.getValue("spoken")
+          : "";
+      },
+    },
+  });
+</script>
+<script src="prueba.js"></script>
+</html>
