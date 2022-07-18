@@ -33,6 +33,7 @@ overflow-x: hidden;
     margin-left:10%;
     padding: 4%;
     height: max-content;
+    border: 1px solid #fe6666;
 }
 .cuadrodepreguntas{
     display:flex;
