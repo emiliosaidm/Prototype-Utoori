@@ -10,7 +10,7 @@ body{
     margin: 0px;
     width: 100%;
     height: 12.5vh;
-    background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
+    background-color: #df5b5b;
     display: inline;
 }
 .divisor2{
@@ -28,11 +28,10 @@ body{
     position: absolute;
     margin-left: 88%;
     top:0;
-    background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
+    background-color: #df5b5b;
     height: 100vh;
     width: 12%;
     margin-top: 0vh;
-    border-left: 2px solid #8332e4;
     padding-top: 11.5vh;
 }
 #im1{
@@ -56,7 +55,7 @@ h1{
 }
 
 .soy{
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 5px solid #fe6666;
     margin-top: 10px ;
     height: 30px;
     font-size: 20px;
@@ -75,7 +74,7 @@ h1{
         width: max-content;
         border:none;
         background-color: white;
-        border-bottom: 5px solid #8332e4;
+        border-bottom: 2px solid #df5b5b;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         transition: 1s;
@@ -84,7 +83,7 @@ h1{
  }
  #b1:hover{
         background-color: white;
-        border-bottom: 5px solid #ff914d;
+        border-bottom: 2px solid #fe6666;
  }
 p{
     font-size: 20px;
@@ -115,13 +114,13 @@ p{
     font-size: 17px;
     font-family: 'Open Sans', sans-serif; 
     color: white;
-    background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
+    background-color: #fe6666;
     text-align: left;
     padding: 10px;  
     margin-top: -10px;
 }
 #mbar:hover{
-    background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
+    background-color: #fe6666;
     text-align: left;
     padding: 10px;  
     margin-top: -10px;
@@ -140,42 +139,37 @@ p{
     top:0;
 }
 #nombredeclase{
-    border-bottom: 5px solid #8332e4;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     width: max-content;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 #materiadeclase{
-    border-bottom: 5px solid #ff914d;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     width: max-content;
-    margin-left: 20px;
+    margin-left: 100px;
 }
 #recursos{
     border-radius: 5px;
-    border: 2px solid #8332e4;
+    border: 1px solid #fe6666;
     height: 490px;
     width: 490px;
     margin-left: 8%;
     margin-top: -2px;
     position: static;
     background-color: #F5F5F5;
-    box-shadow: 1.3px 1.3px ;
 }
 #alumnoscali{
     border-radius: 5px;
-    border: 2px solid #8332e4;
-    height: 210px;
+    border: 1px solid #fe6666;
+    height: max-content;
     width: 490px;
     margin-left: 48%;
-    margin-top: 15.7%;
+    margin-top: 14.5%;
     position: absolute;
-    top:0;
+    top: 0;
     background-color: #F5F5F5;
-    box-shadow: 1.3px 1.3px ;
-
 }
 #recursostitulo{
     text-align: center;
@@ -186,7 +180,7 @@ p{
 #hre1{
     width: 200px;
     height: 5px;
-    background-color: #ff914d;
+    background-color: #df5b5b;
     border: none;
     margin-top: -15px;
 }
@@ -220,10 +214,10 @@ p{
     color: black;
     text-align: center;
     width: max-content ;
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 2px solid #df5b5b;
 }
 .precurso:hover{
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     
 }
 
@@ -262,18 +256,18 @@ p{
     width: 100%;
     height: max-content;
     justify-content: space-between;
-
-
 }
 
 #pactividad{
     color: black;
-    font-size: 15px;
+    font-size: 19px;
     font-family: 'Open Sans', sans-serif; 
     font-weight: 600;
     text-align: left;
     margin: 10px;
     vertical-align: middle;
+    
+
 
 }
 #pactividadf{
@@ -302,7 +296,7 @@ td{
     color: black;
     font-size: 17px;
     text-align: center;
-    border-bottom: 1px solid #8332e4;
+    border-bottom: 0.5px solid #fe6666;
 }
 th{
     font-family: 'Open Sans', sans-serif; 
@@ -310,7 +304,8 @@ th{
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    background-color: #8332e4;
+    background-color: #fe6666;
+    border-radius: 10px;
     
 }
 .dropdown-btn{
@@ -320,7 +315,7 @@ th{
     font-weight: 600;
     cursor: pointer;
     border: none;
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 2px solid #df5b5b;
    
 }
 .amenu{
@@ -349,22 +344,21 @@ th{
 }
     
 .amenu:hover .dropdown-btn{
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 1px solid #fe6666;
 }
 .amenu:hover .dcont a{
     display: block;
 }
 #buscatema{
     border-radius: 5px;
-    border: 3px solid #8332e4;
-    height: 247.3px;
+    height: 225px;
     width: 490px;
     margin-left: 48%;
     margin-top: 30.9%;
     position: absolute;
     top:0;
     background-color: #F5F5F5;
-    box-shadow: 1.3px 1.3px ;
+    border: 1px solid #fe6666;
 
 }
 .pst{
@@ -377,7 +371,7 @@ th{
 #busca{
         background-color: rgba(255, 255, 255, 0);
         border: none;
-        border-bottom: 3px solid #8332e4;
+        border-bottom: 2px solid #df5b5b;
         height: 2rem;
         margin-top: 1%;
         width: 80%;
@@ -387,11 +381,12 @@ th{
 #busca:focus{
         outline: none;
         border: none;
-        border-bottom: 3px solid #ff914d;
+        border-bottom: 2px solid #fe6666;
 }
 a{
         text-decoration: none; 
         color: black;
+        text-decoration: none;
 }
 
 .barradeprogresodiv{
@@ -407,7 +402,7 @@ a{
 #barra{
         margin-top: 1.5%;
         height: 1.3rem;
-        background-color: lightgreen;
+        background-color: #98ff98;
         color: black;
         font-family: 'Open Sans', sans-serif; 
         text-align: center;
@@ -463,7 +458,7 @@ a{
     height: 17.5%;
     width: 100%;
     border: none;
-    border-bottom:5px solid #ff914d ;
+    border-bottom: 2px solid #df5b5b;
     transition: 1s;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -471,11 +466,11 @@ a{
 
 }
 .inputspopup:focus{
-    border-bottom:5px solid #8332e4 ;
+    border-bottom: 2px solid #fe6666;
     outline: none;
 }
 .inputspopup:hover{
-    border-bottom:5px solid #8332e4 ;
+    border-bottom: 2px solid #fe6666;
     outline: none;
 }
 .formularioeje{
@@ -493,7 +488,7 @@ a{
     grid-column: 1;
     grid-row: 2;
     border-radius: 5px;
-    border: 3px solid #8332e4;
+    border: 1px solid #fe6666;
     background-color: #F5F5F5;
     padding: 2%;
     margin-left: 5%;
@@ -503,16 +498,19 @@ a{
     grid-column: 2;
     grid-row: 1/22;
     border-radius: 5px;
-    border: 3px solid #8332e4;
+    border: 1px solid #fe6666;
     background-color: #F5F5F5;
     padding: 3%;
     margin-top: 6%;
     margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 #todo{
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    border-bottom: 3px solid #ff914d;
+    border-bottom: 1px solid #fe6666;
     height: 2rem;
     margin-top: -1%;
     width: 90%;
@@ -523,7 +521,7 @@ a{
 #busca:hover{
     outline: none;
     border: none;
-    border-bottom: 3px solid #ff914d;
+    border-bottom: 2px solid #df5b5b;
 }
 .recursostitulo2{
     text-align: center;
@@ -542,14 +540,14 @@ a{
 #hre3{
     width: 60%;
     height: 5px;
-    background-color: #8332e4;
+    background-color: #fe6666;
     border: none;
     margin-top: -15px;
 }
 li{
     font-family: 'Open Sans', sans-serif; 
     font-size: 20px;
-    width: max-content;
+    width: 100%;
 }
 #agregaalumno{
     position: absolute;
@@ -589,7 +587,7 @@ li{
 .alumnos{
     grid-column: 2;
     grid-row: 2;
-    border: 3px solid #8332e4;
+    border: 1px solid #fe6666;
     background-color: #F5F5F5;
     padding: 3%;
     margin-top: 6%;
@@ -634,7 +632,7 @@ li{
     width: max-content;
     border:none;
     background-color: white;
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #df5b5b;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     transition: 1s;
@@ -644,7 +642,7 @@ li{
 }
 #bo:hover{
     background-color: white;
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 2px solid #fe6666;
 }
 #img4{
     position: static;
@@ -655,7 +653,7 @@ li{
     height: 17.5%;
     width: 80%;
     border: none;
-    border-bottom:5px solid #ff914d ;
+    border-bottom: 2px solid #df5b5b ;
     transition: 1s;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -664,9 +662,42 @@ li{
     margin-left: 10%;
 }
 #todasa:hover{
-    border-bottom:5px solid #8332e4 ;
+    border-bottom: 2px solid #fe6666 ;
     outline: none;
 }
 a:hover{
     cursor: pointer;
+}
+.vpexamen{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    text-align: left;
+    padding:0px;  
+    margin-top: -10px;
+    margin: 5%;
+    transition:2s;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    
+}
+.rec{
+    background-color: white;
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    transition: 1s;
+}
+.rec:hover{
+    background-color: #fe6666;
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    color: white    ;
 }

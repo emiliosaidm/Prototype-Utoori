@@ -41,9 +41,9 @@ function movimiento(){
     }
   }
   
-  setTimeout(regreso,1200);
+  setTimeout(regreso,1500);
     
-  setTimeout(movimiento,20);
+  setTimeout(movimiento,40);
   
   function regreso(){
     var pbarra=document.getElementById('barra');
