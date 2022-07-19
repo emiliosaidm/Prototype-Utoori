@@ -12,7 +12,7 @@ body{
     padding:10px;
     width: 50%;
     height: 100vh;
-    background-image: linear-gradient(45deg,#ff914d,#dd6a6d);
+    background-color: #df5b5b;
 }
 .divisor2{
     margin: 0px;
@@ -75,35 +75,35 @@ input[type=text]{
     height: 30px;
     width: 200px;
     border: none;
-    border-bottom:5px solid #ff914d ;
+    border-bottom: 2px solid #df5b5b ;
     transition: 1s;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 #Nombre:focus{
-    border-bottom:5px solid #8332e4 ;
+    border-bottom: 2px solid #fe6666 ;
     outline: none;
 }
 #Nombre:hover{
-    border-bottom:5px solid #8332e4 ;
+    border-bottom: 2px solid #fe6666;
     outline: none;
 }
 #Apellido{
     height: 30px;
     width: 200px;
     border: none;
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 2px solid #df5b5b;
     transition: 1s;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     
 }
 #Apellido:focus{
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     outline: none;  
 }
 #Apellido:hover{
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     outline: none;
     
 }
@@ -111,19 +111,19 @@ input[type=text]{
     height: 30px;
     width: 406px;
     border: none;
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 2px solid #df5b5b;
     transition: 1s;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     
 }
 #email:focus{
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     outline: none;
     
 }
 #email:hover{
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     outline: none;
     
 }
@@ -136,16 +136,16 @@ select[multiple] {
     color: black;
 }
 select[multiple]:focus option:checked {
-    background: #8332e4 linear-gradient(0deg, #8332e4 0%,#8332e4 100%);
+    background: #fe6666 linear-gradient(0deg, #fe6666 0%,#fe6666 100%);
     outline: none;
     color: white;
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     transition: 1s;
   }
   
 
 .soy{
-    border-bottom: 5px solid #ff914d;
+    border-bottom: 2px solid #df5b5b;
     margin-top: 10px ;
     height: 30px;
     font-size: 20px;
@@ -154,9 +154,9 @@ select[multiple]:focus option:checked {
     
 }
 .soy:hover{
-    background-color: #8332e4;
+    background-color: #fe6666;
     color: white;
-    border-bottom: 5px solid #8332e4;
+    border-bottom: 2px solid #fe6666;
     transition: 1s;
     }
 
@@ -164,7 +164,7 @@ select[multiple]:focus option:checked {
         width: max-content;
         border:none;
         background-color: white;
-        border-bottom: 5px solid #8332e4;
+        border-bottom: 2px solid #fe6666;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         transition: 1s;
@@ -173,7 +173,7 @@ select[multiple]:focus option:checked {
     }
     #b1:hover{
         background-color: white;
-        border-bottom: 5px solid #ff914d;
+        border-bottom: 5px solid #df5b5b;
     }
 p{
     font-size: 20px;
